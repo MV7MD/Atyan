@@ -3,12 +3,30 @@ const formTranslations = {
   en: { 
     fnamePlc: "Ahmed", lnamePlc: "Hassan", emailPlc: "ahmed@company.com", msgPlc: "Tell us about your interest...", 
     lblFname: "First name", lblLname: "Last name", lblEmail: "Email address", lblRole: "I am a", lblMsg: "Message", btnSend: "Send Message",
-    opt0: "Select your role", opt1: "Cooperative / Farmer Organisation", opt2: "Exporter / Food Processor", opt3: "Agricultural Bank / Financier", opt9: "Other" 
+    opt0: "Select your role", 
+    opt1: "Cooperative / Farmer Organisation", 
+    opt2: "Exporter / Food Processor", 
+    opt3: "Agricultural Bank / Financier", 
+    opt4: "Certification Body / Auditor",
+    opt5: "Development Finance / NGO",
+    opt6: "Fertiliser / Input Manufacturer",
+    opt7: "Investor / Impact Fund",
+    opt8: "Government / Regulator",
+    opt9: "Other" 
   },
   ar: { 
     fnamePlc: "أحمد", lnamePlc: "حسن", emailPlc: "ahmed@company.com", msgPlc: "أخبرنا عن اهتمامك...",
     lblFname: "الاسم الأول", lblLname: "الاسم الأخير", lblEmail: "البريد الإلكتروني", lblRole: "صفتي", lblMsg: "الرسالة", btnSend: "إرسال الرسالة",
-    opt0: "اختر صفتك", opt1: "تعاونية / منظمة مزارعين", opt2: "مُصدّر / مصنع أغذية", opt3: "بنك زراعي / ممول", opt9: "أخرى" 
+    opt0: "اختر صفتك", 
+    opt1: "تعاونية / منظمة مزارعين", 
+    opt2: "مُصدّر / مصنع أغذية", 
+    opt3: "بنك زراعي / ممول", 
+    opt4: "جهة اعتماد / مُدقق",
+    opt5: "تمويل تنموي / منظمة غير حكومية",
+    opt6: "مُصنّع أسمدة / مدخلات زراعية",
+    opt7: "مستثمر / صندوق ذو أثر",
+    opt8: "جهة حكومية / تنظيمية",
+    opt9: "أخرى" 
   }
 };
 
@@ -50,6 +68,11 @@ function updateFormLanguage(lang) {
   document.getElementById('opt1').innerText = dict.opt1;
   document.getElementById('opt2').innerText = dict.opt2;
   document.getElementById('opt3').innerText = dict.opt3;
+  document.getElementById('opt4').innerText = dict.opt4;
+  document.getElementById('opt5').innerText = dict.opt5;
+  document.getElementById('opt6').innerText = dict.opt6;
+  document.getElementById('opt7').innerText = dict.opt7;
+  document.getElementById('opt8').innerText = dict.opt8;
   document.getElementById('opt9').innerText = dict.opt9;
 }
 
