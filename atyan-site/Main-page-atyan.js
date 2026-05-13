@@ -153,7 +153,7 @@ function closeVideoModal(e) {
 
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeVideoModal(); });
 
-// Nav background on scroll (يحافظ على اللون الأبيض مع ضل خفيف)
+// Nav background on scroll 
 window.addEventListener('scroll', () => {
   const nav = document.getElementById('navbar');
   if (window.scrollY > 60) {
