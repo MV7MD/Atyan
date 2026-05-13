@@ -39,6 +39,7 @@ html[dir="rtl"] body {
   text-align: right;
 }
 html[dir="rtl"] .hero-title { font-family: 'Cairo', sans-serif; font-weight: 700; line-height: 1.4; }
+html[dir="rtl"] .hero-arabic { font-family: 'Cairo', sans-serif; font-weight: 600; }
 html[dir="rtl"] .section-title, 
 html[dir="rtl"] .mission-quote, 
 html[dir="rtl"] .vision-quote { font-family: 'Cairo', sans-serif; font-weight: 600; line-height: 1.4;}
@@ -79,7 +80,7 @@ html[dir="rtl"] .nav-links li, html[dir="rtl"] .mmenu a { direction: rtl; }
   font-family: var(--font-serif);
   font-size: 1.8rem;
   font-weight: 600;
-  color: var(--green-deep); /* اللون الأخضر الغامق لكلمة أطيان */
+  color: var(--green-deep);
   letter-spacing: 0.02em;
 }
 
@@ -199,8 +200,17 @@ html[dir="rtl"] .mmenu a { font-family: 'Cairo', sans-serif; }
   font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 400;
 }
 .hero-eyebrow::before { content: ''; width: 6px; height: 6px; background: var(--gold); border-radius: 50%; display: inline-block; }
-.hero-title { font-family: var(--font-serif); font-size: clamp(3rem, 6vw, 5.5rem); font-weight: 300; color: var(--white); line-height: 1.1; margin-bottom: 1.5rem; letter-spacing: -0.01em; }
+.hero-title { font-family: var(--font-serif); font-size: clamp(3rem, 6vw, 5.5rem); font-weight: 300; color: var(--white); line-height: 1.1; margin-bottom: 0.5rem; letter-spacing: -0.01em; }
 .hero-title em { font-style: italic; color: var(--gold-light); }
+
+.hero-arabic {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: rgba(255,255,255,0.8);
+  letter-spacing: 0.05em;
+  margin-bottom: 2rem;
+}
+
 .hero-sub { font-size: 1.05rem; color: rgba(255,255,255,0.65); line-height: 1.7; max-width: 580px; margin: 0 auto 3rem; font-weight: 300; }
 
 /* ─── VIDEO ─── */
@@ -249,6 +259,14 @@ html[dir="rtl"] .vision-quote { padding-left: 0; padding-right: 1.5rem; border-l
 .about-left { padding-left: 1.5rem; }
 html[dir="rtl"] .about-left { padding-left: 0; padding-right: 1.5rem; }
 .about-body { font-size: 1rem; line-height: 1.85; color: var(--text-mid); font-weight: 300; margin-bottom: 1.5rem; }
+
+.about-pillars { display: grid; grid-template-columns: 1fr; gap: 1rem; margin-top: 2.5rem; }
+.pillar { background: var(--white); border: 1px solid rgba(45,106,79,0.12); border-radius: 8px; padding: 1.4rem 1.6rem; display: flex; gap: 1rem; align-items: flex-start; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.pillar:hover { transform: translateY(-4px); box-shadow: 0 10px 20px rgba(10, 46, 26, 0.05); }
+.pillar-icon { width: 40px; height: 40px; flex-shrink: 0; background: rgba(45,106,79,0.08); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+.pillar-icon svg { width: 20px; height: 20px; stroke: var(--green-warm); }
+.pillar-text h4 { font-size: 0.9rem; font-weight: 500; color: var(--text-dark); margin-bottom: 0.3rem; letter-spacing: 0.02em; }
+.pillar-text p { font-size: 0.875rem; color: var(--text-muted); line-height: 1.6; font-weight: 300; }
 
 .about-stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: rgba(45,106,79,0.1); border: 1px solid rgba(45,106,79,0.1); border-radius: 12px; overflow: hidden; margin-bottom: 2rem; }
 .about-stat { background: var(--white); padding: 2rem; }
