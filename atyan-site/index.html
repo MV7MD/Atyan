@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atyan — Egypt's Verified Agricultural Data Infrastructure</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Main-page-atyan.css">
+</head>
+<body>
+
+<div class="mmenu" id="mm">
+  <a href="#mission" class="mlink">
+    <span class="en-inline">Vision</span><span class="ar-inline">الرؤية</span>
+  </a>
+  <a href="#serve" class="mlink">
+    <span class="en-inline">Ecosystem</span><span class="ar-inline">النظام البيئي</span>
+  </a>
+  <a href="#about" class="mlink">
+    <span class="en-inline">About</span><span class="ar-inline">عن أطيان</span>
+  </a>
+  <a href="#contact" class="mlink">
+    <span class="en-inline">Contact</span><span class="ar-inline">تواصل معنا</span>
+  </a>
+</div>
+
+<nav id="navbar">
+  <a href="#home" class="nav-logo">
+    <div class="nav-logo-mark">
+      <img src="logo.png" alt="Atyan Logo" class="logo-img">
+    </div>
+    <span class="nav-logo-text">Atyan</span>
+  </a>
+  
+  <ul class="nav-links">
+    <li><a href="#mission"><span class="en-inline">Vision</span><span class="ar-inline">الرؤية</span></a></li>
+    <li><a href="#serve"><span class="en-inline">Ecosystem</span><span class="ar-inline">النظام البيئي</span></a></li>
+    <li><a href="#about"><span class="en-inline">About</span><span class="ar-inline">عن أطيان</span></a></li>
+    <li><a href="#contact"><span class="en-inline">Contact Us</span><span class="ar-inline">تواصل معنا</span></a></li>
+  </ul>
+
+  <div class="nav-actions">
+    <a href="#contact" class="nav-cta">
+      <span class="en-inline">Get in touch</span><span class="ar-inline">ابدأ الآن</span>
+    </a>
+    <button id="langToggle" class="lang-btn">AR</button>
+    <button class="hbg" id="mobileMenuBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<section id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow hero-anim delay-1">
+      <span class="en-inline">Egypt's Verified Agricultural Data Infrastructure</span>
+      <span class="ar-inline">البنية التحتية الموثوقة للبيانات الزراعية في مصر</span>
+    </div>
+    <h1 class="hero-title hero-anim delay-2">
+      <span class="en-block">Where the field<br>becomes <em>trusted data</em></span>
+      <span class="ar-block">حيث يصبح الحقل<br><em>بيانات موثوقة</em></span>
+    </h1>
+    <p class="hero-sub hero-anim delay-3">
+      <span class="en-inline">Atyan independently verifies what happens on Egyptian farms — through satellite observation, field surveys, and laboratory analysis — transforming agricultural reality into bankable, tradeable, and certifiable intelligence.</span>
+      <span class="ar-inline">تقوم أطيان بالتحقق المستقل مما يحدث في المزارع المصرية — عبر المراقبة بالأقمار الصناعية، والمسح الميداني، والتحليل المعملي — لتحويل الواقع الزراعي إلى معلومات قابلة للتمويل والتداول والاعتماد.</span>
+    </p>
+  </div>
+
+  <div class="video-container hero-anim delay-4">
+    <div class="video-placeholder" id="videoPlaceholder">
+      <div class="video-landscape"></div>
+      <div class="video-fields"></div>
+      <button class="play-button" aria-label="Play video" onclick="openVideoModal()">
+        <svg viewBox="0 0 24 24" fill="#0a2e1a">
+          <polygon points="5,3 19,12 5,21"/>
+        </svg>
+      </button>
+      <div class="video-caption">
+        <strong><span class="en-inline">The Atyan Story</span><span class="ar-inline">قصة أطيان</span></strong>
+        <span class="en-inline">Watch how we're transforming Egyptian agriculture</span>
+        <span class="ar-inline">شاهد كيف نساهم في تحويل الزراعة المصرية</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mission">
+  <div class="mission-panel fade-in">
+    <span class="section-label">
+      <span class="en-inline">Our Mission</span><span class="ar-inline">مهمتنا</span>
+    </span>
+    <h2 class="section-title">
+      <span class="en-block">Making farm<br>data trustworthy</span>
+      <span class="ar-block">جعل بيانات<br>المزارع موثوقة</span>
+    </h2>
+    <div style="width:3rem;height:1px;background:var(--gold);margin:1.5rem 0 2rem;"></div>
+    <blockquote class="mission-quote">
+      <span class="en-block">"Egypt produces $11.5 billion of agricultural exports every year. Almost none of it is backed by independent, verifiable data. Atyan changes that."</span>
+      <span class="ar-block">"تنتج مصر صادرات زراعية بقيمة ١١٫٥ مليار دولار سنوياً. لا يكاد يوجد منها ما هو مدعوم ببيانات مستقلة يمكن التحقق منها. أطيان تُغير هذه المعادلة."</span>
+    </blockquote>
+    <p>
+      <span class="en-inline">We exist to create verified records of what actually happens on Egyptian farms — in the soil, in the sky, in the field, and in the lab — and make that verified reality legible to every actor in the food and emissions chain who needs to trust it.</span>
+      <span class="ar-inline">نحن هنا لإنشاء سجلات موثقة لما يحدث فعلياً في المزارع المصرية — في التربة، في السماء، في الحقل، وفي المعمل — وجعل هذا الواقع الموثق قابلاً للقراءة لكل فاعل في سلسلة الغذاء والانبعاثات يحتاج إلى الثقة فيه.</span>
+    </p>
+  </div>
+  
+  <div class="mission-panel fade-in stagger-2">
+    <span class="section-label">
+      <span class="en-inline">Our Vision</span><span class="ar-inline">رؤيتنا</span>
+    </span>
+    <h2 class="section-title">
+      <span class="en-block">One source of truth for Egyptian agriculture</span>
+      <span class="ar-block">مصدر واحد للحقيقة في الزراعة المصرية</span>
+    </h2>
+    <div style="width:3rem;height:1px;background:var(--green-warm);margin:1.5rem 0 2rem;"></div>
+    <blockquote class="vision-quote">
+      <span class="en-block">"The data library is what makes the technology trustworthy. The trustworthiness is what makes the business irreplaceable."</span>
+      <span class="ar-block">"مكتبة البيانات هي ما يجعل التكنولوجيا موثوقة. والموثوقية هي ما يجعل العمل لا يمكن الاستغناء عنه."</span>
+    </blockquote>
+    <p>
+      <span class="en-inline">We envision an Egyptian agricultural economy where every farmer can access premium markets, every exporter can prove compliance, every bank can lend with confidence, and every sustainability claim is backed by independently verified field-level data — not assumptions.</span>
+      <span class="ar-inline">نتخيل اقتصاداً زراعياً مصرياً يستطيع فيه كل مزارع الوصول للأسواق المتميزة، وكل مصدر إثبات الامتثال، وكل بنك الإقراض بثقة، حيث تكون كل ادعاءات الاستدامة مدعومة ببيانات ميدانية تم التحقق منها بشكل مستقل — وليس بالافتراضات.</span>
+    </p>
+    <p style="margin-top:1.2rem;">
+      <span class="en-inline">Atyan is not a farm management app. It is the neutral, compounding infrastructure that makes this possible at national scale.</span>
+      <span class="ar-inline">أطيان ليست تطبيقاً لإدارة المزارع. بل هي البنية التحتية المحايدة والمتراكمة التي تجعل كل هذا ممكناً على المستوى القومي.</span>
+    </p>
+  </div>
+</section>
+
+<section id="about">
+  <div class="about-grid">
+    <div class="about-left">
+      <span class="section-label fade-in">
+        <span class="en-inline">About Atyan</span><span class="ar-inline">عن أطيان</span>
+      </span>
+      <h2 class="section-title fade-in stagger-1">
+        <span class="en-block">Built from<br>a lived failure</span>
+        <span class="ar-block">بُنيت من واقع<br>تجربة حقيقية</span>
+      </h2>
+      <div class="divider fade-in stagger-2"></div>
+      <p class="about-body fade-in stagger-2">
+        <span class="en-inline">Atyan was not conceived from market research. It emerged from a failure the founding team lived — an effort to commercialise next-generation fertilizers in Egypt that stalled not because of inferior products or unwilling farmers, but because there was no system to verify what actually happened in the field.</span>
+        <span class="ar-inline">لم تُبتكر أطيان بناءً على أبحاث السوق. بل انبثقت من تحدٍ عاشه الفريق المؤسس — محاولة لتسويق جيل جديد من الأسمدة في مصر تعثرت ليس بسبب ضعف المنتجات أو عدم رغبة المزارعين، بل لعدم وجود نظام للتحقق مما حدث فعلياً في الحقل.</span>
+      </p>
+      <p class="about-body fade-in stagger-3">
+        <span class="en-inline">That experience became Atyan's founding thesis: <strong style="color:var(--green-warm);font-weight:500;">the data gap is the bottleneck.</strong> Every downstream failure in Egyptian agriculture — slow adoption of better inputs, limited smallholder credit, blocked export market access, absent sustainability reporting — is a symptom of the same missing infrastructure.</span>
+        <span class="ar-inline">أصبحت هذه التجربة هي الفكرة التأسيسية لأطيان: <strong style="color:var(--green-warm);font-weight:700;">فجوة البيانات هي العائق الأكبر.</strong> كل إخفاق لاحق في الزراعة المصرية — التبني البطيء للمدخلات الأفضل، محدودية ائتمان صغار المزارعين، صعوبة الوصول لأسواق التصدير، غياب تقارير الاستدامة — هو عَرَض لنفس البنية التحتية المفقودة.</span>
+      </p>
+      <div class="about-pillars fade-in stagger-4">
+        <div class="pillar">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="pillar-text">
+            <h4><span class="en-inline">Ground truth first</span><span class="ar-inline">الحقيقة الميدانية أولاً</span></h4>
+            <p><span class="en-inline">Satellite data validates field data — it never replaces it. Human-verified evidence is always the primary source.</span><span class="ar-inline">بيانات الأقمار الصناعية تتحقق من البيانات الميدانية — ولا تستبدلها أبداً. الأدلة الموثقة بشرياً هي دائماً المصدر الأساسي.</span></p>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <div class="pillar-text">
+            <h4><span class="en-inline">The farmer never pays</span><span class="ar-inline">المزارع لا يدفع أبداً</span></h4>
+            <p><span class="en-inline">Upstream and downstream actors pay because verified data solves their legally mandated problems. Farmers receive services subsidised by the value chain.</span><span class="ar-inline">الأطراف المستفيدة هي من تدفع لأن البيانات الموثقة تحل مشاكلهم القانونية. ويتلقى المزارعون خدمات مدعومة من سلسلة القيمة.</span></p>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </div>
+          <div class="pillar-text">
+            <h4><span class="en-inline">The cluster is the unit</span><span class="ar-inline">الكتلة هي الوحدة</span></h4>
+            <p><span class="en-inline">Cluster-level verified data is what enterprise clients buy, what banks lend against, and what export buyers trust.</span><span class="ar-inline">بيانات الكتلة الموثقة هي ما يشتريه العملاء، وما تقرض البنوك بناءً عليه، وما يثق فيه مشترو الصادرات.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-right">
+      <div class="about-stat-grid fade-in stagger-1">
+        <div class="about-stat">
+          <div class="about-stat-num"><span class="en-inline">$11.5B</span><span class="ar-inline">١١٫٥ مليار $</span></div>
+          <div class="about-stat-label"><span class="en-inline">Egypt's annual agricultural exports — almost none backed by verified data</span><span class="ar-inline">صادرات مصر الزراعية السنوية — تقريباً غير مدعومة ببيانات موثقة</span></div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-num"><span class="en-inline">4M+</span><span class="ar-inline">٤ مليون+</span></div>
+          <div class="about-stat-label"><span class="en-inline">Smallholder farmers growing Egypt's food and export crops</span><span class="ar-inline">صغار المزارعين الذين يزرعون غذاء مصر ومحاصيل التصدير</span></div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-num"><span class="en-inline">44%</span><span class="ar-inline">٪٤٤</span></div>
+          <div class="about-stat-label"><span class="en-inline">Nitrogen use efficiency — down from 71% in the 1960s, a documented crisis</span><span class="ar-inline">كفاءة استخدام النيتروجين — انخفاضاً من ٧١٪ في الستينيات، أزمة موثقة</span></div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-num"><span class="en-inline">27</span><span class="ar-inline">٢٧</span></div>
+          <div class="about-stat-label"><span class="en-inline">Stakeholders served simultaneously from one verified data source</span><span class="ar-inline">جهة مستفيدة تُخدم في وقت واحد من مصدر بيانات موثوق واحد</span></div>
+        </div>
+      </div>
+      <div class="about-founding fade-in stagger-2">
+        <strong><span class="en-inline">Atyan in one sentence</span><span class="ar-inline">أطيان في جملة واحدة</span></strong>
+        <span class="en-inline">Atyan is Egypt's first verified agricultural data infrastructure — a system that independently verifies farm activity through satellite observation, field surveys, and laboratory analysis, and makes that verified reality legible to every actor in the food and emissions chain who needs to trust it.</span>
+        <span class="ar-inline">أطيان هي أول بنية تحتية للبيانات الزراعية الموثوقة في مصر — نظام يتحقق بشكل مستقل من نشاط المزرعة، ويجعل هذا الواقع مقروءاً ومفهوماً لكل الأطراف الفاعلة في سلسلة الغذاء.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="serve">
+  <div class="serve-intro">
+    <div class="serve-header">
+      <div>
+        <span class="section-label fade-in">
+          <span class="en-inline">Who We Serve</span><span class="ar-inline">من نخدم</span>
+        </span>
+        <h2 class="section-title fade-in stagger-1">
+          <span class="en-block">An ecosystem of actors,<br>one shared foundation.</span>
+          <span class="ar-block">نظام بيئي متكامل،<br>وأساس واحد مشترك.</span>
+        </h2>
+      </div>
+    </div>
+
+    <div class="serve-grid">
+      <div class="serve-card fade-in stagger-1">
+        <div class="serve-card-icon" style="background:rgba(45,106,79,0.1);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--green-warm)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 1 10 10H2A10 10 0 0 1 12 2z"/><path d="M2 12c0 5.52 4.48 10 10 10s10-4.48 10-10"/><path d="M6 17l1-4 5 2 5-2 1 4"/></svg>
+        </div>
+        <h3><span class="en-inline">Farmers & Growers</span><span class="ar-inline">المزارعون والمنتجون</span></h3>
+        <p><span class="en-inline">Smallholder producers whose land and labor are the origin of every supply chain we support.</span><span class="ar-inline">صغار المنتجين الذين تعتبر أراضيهم وجهدهم أصل كل سلسلة توريد ندعمها.</span></p>
+      </div>
+
+      <div class="serve-card fade-in stagger-2">
+        <div class="serve-card-icon" style="background:rgba(201,168,76,0.1);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <h3><span class="en-inline">Agricultural Cooperatives</span><span class="ar-inline">التعاونيات الزراعية</span></h3>
+        <p><span class="en-inline">Producer groups seeking stronger access to markets, services, and institutional recognition.</span><span class="ar-inline">مجموعات المنتجين التي تسعى للوصول بشكل أفضل إلى الأسواق والخدمات والاعتراف المؤسسي.</span></p>
+      </div>
+
+      <div class="serve-card fade-in stagger-3">
+        <div class="serve-card-icon" style="background:rgba(52,144,220,0.1);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#1a6fb0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h3><span class="en-inline">Agri Businesses</span><span class="ar-inline">الشركات الزراعية</span></h3>
+        <p><span class="en-inline">Exporters, processors, and operators navigating evolving compliance and sustainability mandates.</span><span class="ar-inline">المصدرون والمصنعون والشركات التي تتعامل مع متطلبات الامتثال والاستدامة المتطورة.</span></p>
+      </div>
+
+      <div class="serve-card fade-in stagger-1">
+        <div class="serve-card-icon" style="background:rgba(200,80,80,0.1);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#b03030" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <h3><span class="en-inline">Development Organizations</span><span class="ar-inline">المؤسسات التنموية</span></h3>
+        <p><span class="en-inline">International programs and impact institutions building rural economic resilience.</span><span class="ar-inline">البرامج الدولية والمؤسسات ذات الأثر التي تبني المرونة الاقتصادية الريفية.</span></p>
+      </div>
+
+      <div class="serve-card fade-in stagger-2">
+        <div class="serve-card-icon" style="background:rgba(45,106,79,0.1);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--green-warm)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+        </div>
+        <h3><span class="en-inline">Financial Partners</span><span class="ar-inline">الشركاء الماليون</span></h3>
+        <p><span class="en-inline">Banks, insurers, and investors extending services into rural markets with confidence.</span><span class="ar-inline">البنوك وشركات التأمين والمستثمرون الذين يوسعون خدماتهم في الأسواق الريفية بثقة.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact-bg"></div>
+  <div class="contact-inner">
+    <div class="contact-left">
+      <span class="section-label fade-in">
+        <span class="en-inline">Contact Us</span><span class="ar-inline">تواصل معنا</span>
+      </span>
+      <h2 class="section-title fade-in stagger-1">
+        <span class="en-block">Let's build<br>Egypt's data<br>infrastructure together</span>
+        <span class="ar-block">دعنا نبني البنية<br>التحتية لبيانات<br>مصر معاً</span>
+      </h2>
+      <div style="width:3rem;height:1px;background:var(--gold);margin:1.5rem 0 2rem;" class="fade-in stagger-2"></div>
+      <p class="fade-in stagger-2">
+        <span class="en-inline">Whether you're a cooperative seeking to enrol your farmers, an exporter navigating EUDR compliance, a bank designing credit products, or an investor — we want to hear from you.</span>
+        <span class="ar-inline">سواء كنت تعاونية تسعى لتسجيل مزارعيها، أو مُصدِّراً يتنقل في متطلبات الامتثال، أو بنكاً يصمم منتجات ائتمانية، أو مستثمراً — يسعدنا تواصلك معنا.</span>
+      </p>
+      <div class="contact-info fade-in stagger-3">
+        <div class="contact-info-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:ask@atyan.earth">ask@atyan.earth</a>
+        </div>
+        <div class="contact-info-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span><span class="en-inline">Cairo, Egypt</span><span class="ar-inline">القاهرة، مصر</span></span>
+        </div>
+      </div>
+      <a href="https://www.linkedin.com/company/atyanearth/" target="_blank" rel="noopener" class="linkedin-btn fade-in stagger-4">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        <span class="en-inline">Follow us on LinkedIn</span><span class="ar-inline">تابعنا على لينكد إن</span>
+      </a>
+    </div>
+
+    <div class="contact-form fade-in stagger-2">
+      <h3><span class="en-inline">Send us a message</span><span class="ar-inline">أرسل لنا رسالة</span></h3>
+      <div id="contactFormContent">
+        <form id="cf" onsubmit="submitForm(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname" id="lblFname">First name</label>
+              <input type="text" id="fname" name="First Name" placeholder="Ahmed" required>
+            </div>
+            <div class="form-group">
+              <label for="lname" id="lblLname">Last name</label>
+              <input type="text" id="lname" name="Last Name" placeholder="Hassan" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email" id="lblEmail">Email address</label>
+            <input type="email" id="email" name="Email" placeholder="ahmed@company.com" required>
+          </div>
+          <div class="form-group">
+            <label for="org" id="lblOrg">Organisation</label>
+            <input type="text" id="org" name="Organisation" placeholder="Your company or institution">
+          </div>
+          <div class="form-group">
+            <label for="role" id="lblRole">I am a</label>
+            <select id="role" name="Role" required>
+              <option value="" disabled selected id="opt0">Select your role</option>
+              <option id="opt1">Cooperative / Farmer Organisation</option>
+              <option id="opt2">Exporter / Food Processor</option>
+              <option id="opt3">Agricultural Bank / Financier</option>
+              <option id="opt4">Certification Body / Auditor</option>
+              <option id="opt5">Development Finance / NGO</option>
+              <option id="opt6">Fertiliser / Input Manufacturer</option>
+              <option id="opt7">Investor / Impact Fund</option>
+              <option id="opt8">Government / Regulator</option>
+              <option id="opt9">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message" id="lblMsg">Message</label>
+            <textarea id="message" name="Message" placeholder="Tell us what you're working on and how Atyan might help..." required></textarea>
+          </div>
+          <button class="submit-btn" id="submitBtn" type="submit">Send Message</button>
+        </form>
+      </div>
+      <div class="modal-success" id="formSuccess" style="display:none;">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+        </svg>
+        <h4><span class="en-inline">Message received</span><span class="ar-inline">تم استلام رسالتك</span></h4>
+        <p><span class="en-inline">Thank you. We'll be in touch within 2 business days.</span><span class="ar-inline">شكراً لك. سنتواصل معك في أقرب وقت.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">
+    <span class="en-inline">Atyan · Sustainable Systems & Technologies</span>
+    <span class="ar-inline">أطيان · النظم والتقنيات المستدامة</span>
+  </div>
+  <div class="footer-copy">
+    <span class="en-inline">© 2026 Atyan. All rights reserved. Confidential.</span>
+    <span class="ar-inline">© 2026 أطيان. جميع الحقوق محفوظة.</span>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="videoModal" onclick="closeVideoModal(event)">
+  <div class="modal" style="max-width:680px;padding:0;overflow:hidden;background:#000;border-color:rgba(201,168,76,0.3);">
+    <button class="modal-close" onclick="closeVideoModal()" style="z-index:10;background:rgba(0,0,0,0.5);border-radius:50%;width:32px;height:32px;display:flex;align-items:center;justify-content:center;">✕</button>
+    <div style="aspect-ratio:16/9;background:#0a2e1a;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1rem;">
+      <div style="text-align:center;padding:2rem;">
+        <p style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:rgba(255,255,255,0.8);font-weight:300;margin-bottom:0.8rem;">
+          <span class="en-inline">The Atyan Story</span><span class="ar-inline">قصة أطيان</span>
+        </p>
+        <p style="color:rgba(255,255,255,0.45);font-size:0.9rem;font-weight:300;">
+          <span class="en-inline">Video coming soon. We're documenting our first cluster deployments across Upper Egypt.</span>
+          <span class="ar-inline">الفيديو قريباً. نقوم بتوثيق أول عمليات نشر لنا في صعيد مصر.</span>
+        </p>
+        <div style="width:3rem;height:1px;background:var(--gold);margin:1.5rem auto;"></div>
+        <p style="color:rgba(201,168,76,0.7);font-size:0.85rem;font-style:italic;font-family:'Cormorant Garamond',serif;">
+          <span class="en-inline">Egypt's Verified Agricultural Data Infrastructure</span>
+          <span class="ar-inline">البنية التحتية الموثوقة للبيانات الزراعية في مصر</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="Main-page-atyan.js"></script>
+</body>
+</html>
